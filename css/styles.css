@@ -1,0 +1,116 @@
+/* Custom styles extending Tailwind & DESIGN.md tokens for SICOES Bolivia Desktop Dashboard */
+
+:root {
+  --surface: #0b1326;
+  --surface-low: #131b2e;
+  --surface-container: #171f33;
+  --surface-high: #222a3d;
+  --surface-highest: #2d3449;
+  --outline-variant: #424754;
+  --primary: #adc6ff;
+  --secondary: #4edea3;
+  --tertiary: #d0bcff;
+  --error: #ffb4ab;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--surface);
+  color: #dae2fd;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 1280px;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek scrollbars for dense desktop panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060e20;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3449;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #424754;
+}
+
+/* Leaflet dark theme overrides */
+.leaflet-container {
+  background: #060e20 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #171f33 !important;
+  color: #dae2fd !important;
+  border-color: #334155 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #222a3d !important;
+  color: #adc6ff !important;
+}
+
+.leaflet-tooltip.mun-tooltip {
+  background: #131b2e;
+  border: 1px solid #424754;
+  color: #dae2fd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-tooltip-top.mun-tooltip::before {
+  border-top-color: #424754;
+}
+
+/* Table row hover & transitions */
+.data-row {
+  transition: background-color 0.15s ease;
+}
+
+.data-row:hover {
+  background-color: rgba(51, 65, 85, 0.35);
+}
+
+/* Subtle pulse for live indicator */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.live-dot::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  background: #4edea3;
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}

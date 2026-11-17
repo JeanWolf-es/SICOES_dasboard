@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial de Uso — Monitor SICOES Bolivia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            surface: '#0b1326',
+            'surface-low': '#131b2e',
+            'surface-container': '#171f33',
+            'surface-high': '#222a3d',
+            'on-surface': '#dae2fd',
+            'on-surface-variant': '#c2c6d6',
+            outline: '#8c909f',
+            'outline-variant': '#424754',
+            primary: '#adc6ff',
+            'primary-container': '#4d8eff',
+            secondary: '#4edea3',
+            tertiary: '#d0bcff'
+          },
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased">
+
+  <!-- Header -->
+  <header class="border-b border-outline-variant/60 bg-surface-low/90 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-secondary text-[26px]">menu_book</span>
+        <div>
+          <h1 class="text-base font-bold text-on-surface">Guía Didáctica de Uso — Monitor SICOES Bolivia</h1>
+          <p class="text-xs text-outline">Aprende paso a paso a consultar, filtrar y analizar contrataciones públicas</p>
+        </div>
+      </div>
+      <a href="index.html" class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-white hover:text-[#002e6a] text-xs font-semibold flex items-center gap-1.5 transition-colors">
+        <span class="material-symbols-outlined text-[18px]">dashboard</span>
+        Volver al Dashboard
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-10 flex flex-col gap-8">
+
+    <!-- Intro Card -->
+    <section class="bg-surface-container border border-outline-variant/60 rounded-xl p-6">
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-xl bg-primary-container/20 border border-primary/30 flex items-center justify-center text-primary flex-shrink-0">
+          <span class="material-symbols-outlined text-[28px]">rocket_launch</span>
+        </div>
+        <div>
+          <h2 class="text-lg font-bold text-on-surface">¿Qué puedes hacer con esta aplicación?</h2>
+          <p class="text-sm text-on-surface-variant mt-1 leading-relaxed">
+            Este panel de control de escritorio conecta directamente con los datos abiertos de contrataciones estatales de Bolivia
+            (<code class="text-primary">mauforonda/convocatorias_publicas</code>) y los cruza con el mapa oficial de municipios para que puedas
+            auditar procesos en segundos sin instalar bases de datos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 1: Inicio rápido -->
+    <section class="bg-surface-container border border-outline-variant/60 rounded-xl p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-2.5">
+        <span class="px-2.5 py-0.5 rounded-full bg-secondary/15 text-secondary text-xs font-bold">PASO 1</span>
+        <h3 class="text-base font-bold text-on-surface">Abrir la aplicación y elegir el periodo de análisis</h3>
+      </div>
+      <p class="text-sm text-on-surface-variant leading-relaxed">
+        Para que el mapa de municipios cargue correctamente, abre la carpeta del proyecto usando un servidor local (por ejemplo,
+        <strong>Live Server</strong> en VS Code o ejecutando <code class="bg-surface-low px-2 py-0.5 rounded text-primary">python -m http.server 8080</code>).
+      </p>
+      <div class="grid grid-cols-3 gap-4 text-xs">
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4">
+          <div class="font-semibold text-primary mb-1 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">calendar_month</span>
+            Selector de Periodo
+          </div>
+          <p class="text-on-surface-variant">Por defecto carga los <strong>últimos 3 meses</strong> disponibles para darte velocidad inmediata. Puedes cambiar a un mes específico, un año completo o todo el histórico (2020–2022).</p>
+        </div>
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4">
+          <div class="font-semibold text-secondary mb-1 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">sync</span>
+            Botón Actualizar
+          </div>
+          <p class="text-on-surface-variant">Limpia la caché en memoria y vuelve a descargar los archivos CSV directamente desde GitHub Raw.</p>
+        </div>
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4">
+          <div class="font-semibold text-tertiary mb-1 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">download</span>
+            Exportar CSV
+          </div>
+          <p class="text-on-surface-variant">Descarga en un archivo Excel/CSV únicamente los procesos que coinciden con tus filtros activos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 2: Sidebar Filters -->
+    <section class="bg-surface-container border border-outline-variant/60 rounded-xl p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-2.5">
+        <span class="px-2.5 py-0.5 rounded-full bg-primary/15 text-primary text-xs font-bold">PASO 2</span>
+        <h3 class="text-base font-bold text-on-surface">Usar la Barra Lateral de Filtros (Izquierda)</h3>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4 flex flex-col gap-2">
+          <h4 class="font-semibold text-on-surface flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">corporate_fare</span>
+            1. Entidades Clave
+          </h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Usa los botones rápidos para aislar al instante a instituciones estratégicas como <strong>ABC</strong> (Carreteras),
+            <strong>BOA</strong> (Aviación), <strong>YPFB</strong>, <strong>Ministerios</strong> o el <strong>Sector Salud</strong>.
+            Si buscas otra institución, usa el selector desplegable inferior ordenado por volumen de convocatorias.
+          </p>
+        </div>
+
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4 flex flex-col gap-2">
+          <h4 class="font-semibold text-on-surface flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+            2. Nivel de Gobierno
+          </h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Diferencia automáticamente entre el nivel <strong>Nacional</strong> (ministerios, empresas estratégicas, universidades),
+            <strong>Departamental</strong> (Gobernaciones, SEDES) y <strong>Municipal</strong> (Alcaldías y Concejos).
+          </p>
+        </div>
+
+        <div class="bg-surface-low border border-outline-variant/50 rounded-lg p-4 flex flex-col gap-2 col-span-2">
+          <h4 class="font-semibold text-secondary flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-[20px]">map</span>
+            3. Mapa Interactivo de Municipios de Bolivia
+          </h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Haz clic en cualquier polígono municipal del mapa (por ejemplo, <em>El Alto</em>, <em>La Paz</em>, <em>Cochabamba</em> o
+            <em>Santa Cruz de la Sierra</em>) o búscalo por nombre en el cuadro de texto superior. Todo el dashboard (tarjetas KPI, gráficos y tabla)
+            se filtrará automáticamente para mostrar los procesos ejecutados por ese <strong>Gobierno Autónomo Municipal</strong>.
+            Puedes usar el botón <strong>Ampliar</strong> para abrir el mapa en pantalla completa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3: Charts & Table -->
+    <section class="bg-surface-container border border-outline-variant/60 rounded-xl p-6 flex flex-col gap-4">
+      <div class="flex items-center gap-2.5">
+        <span class="px-2.5 py-0.5 rounded-full bg-tertiary/15 text-tertiary text-xs font-bold">PASO 3</span>
+        <h3 class="text-base font-bold text-on-surface">Analizar Gráficos y Explorar la Tabla de Convocatorias</h3>
+      </div>
+      <ul class="space-y-3 text-xs text-on-surface-variant leading-relaxed">
+        <li class="flex items-start gap-2.5">
+          <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">bar_chart</span>
+          <span><strong>Top 10 Entidades:</strong> Muestra las instituciones con más convocatorias según tus filtros. <em>Tip:</em> Haz clic sobre cualquier barra del gráfico para filtrar la tabla por esa entidad.</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">pie_chart</span>
+          <span><strong>Distribución por Modalidad:</strong> Alterna entre vista de <strong>Pastel</strong> o <strong>Barras</strong> para comparar ANPE, Licitación Pública (LP), Contratación Directa (CD) y Contratación Menor (CM).</span>
+        </li>
+        <li class="flex items-start gap-2.5">
+          <span class="material-symbols-outlined text-tertiary text-[18px] mt-0.5">table_rows</span>
+          <span><strong>Tabla Interactiva y Ficha de Detalle:</strong> Busca en tiempo real por código <strong>CUCE</strong>, entidad u objeto del contrato, ordena por fecha o entidad, y haz clic en cualquier fila para abrir una ventana con todos los formularios, archivos y persona de contacto del proceso.</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>

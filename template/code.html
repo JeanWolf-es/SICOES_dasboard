@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#005ac2", "background": "#0b1326", "on-primary-fixed-variant": "#004395", "surface-tint": "#adc6ff", "on-tertiary-fixed": "#23005c", "on-tertiary": "#3c0091", "tertiary-fixed": "#e9ddff", "tertiary-container": "#a078ff", "on-primary-container": "#00285d", "inverse-on-surface": "#283044", "on-tertiary-fixed-variant": "#5516be", "secondary": "#4edea3", "outline-variant": "#424754", "on-primary-fixed": "#001a42", "on-error": "#690005", "on-error-container": "#ffdad6", "primary-container": "#4d8eff", "surface-container-low": "#131b2e", "secondary-fixed-dim": "#4edea3", "surface-container-high": "#222a3d", "surface-bright": "#31394d", "on-secondary-container": "#00311f", "on-tertiary-container": "#340080", "primary-fixed-dim": "#adc6ff", "on-secondary-fixed-variant": "#005236", "on-primary": "#002e6a", "secondary-container": "#00a572", "primary": "#adc6ff", "primary-fixed": "#d8e2ff", "secondary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#d0bcff", "on-surface-variant": "#c2c6d6", "surface": "#0b1326", "error-container": "#93000a", "surface-dim": "#0b1326", "inverse-surface": "#dae2fd", "on-background": "#dae2fd", "tertiary": "#d0bcff", "outline": "#8c909f", "surface-container": "#171f33", "error": "#ffb4ab", "surface-container-lowest": "#060e20", "on-secondary-fixed": "#002113", "on-surface": "#dae2fd", "surface-variant": "#2d3449", "surface-container-highest": "#2d3449", "on-secondary": "#003824" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "margin-desktop": "2rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem" }, "fontFamily": { "headline-lg": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "data-metric": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "headline-lg-mobile": ["Inter"], "headline-xl-mobile": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"] }, "fontSize": { "headline-lg": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "data-metric": ["1.875rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.03em", "fontWeight": "700" }], "body-lg": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "headline-xl": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-md": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl-mobile": ["1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["0.75rem", { "lineHeight": "1rem", "fontWeight": "400" }], "body-md": ["0.875rem", { "lineHeight": "1.25rem", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.3)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0 flex-1"><img alt="Logo Contrataciones Públicas" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrA_z0sbw0OcC2oQRMlc2oL6EJtFnpvQwQ7AmiKW4c31kjhUY5RiSDlYJSiP4vcxKph87upPspUfns8NPFbpR_lq9MDnmkir2irRfutPxLxCFdt1xnKyL8Wn5x47pc0nFZreM4UX6XshsrMMfU-j3nycjp9YNFNnFoPtNYR3rwHVmKbbMT34S2TExr9JAIrin-XQzIViS0uIIjByAKblBekjyOrPXxGGJqZOlyAD21UN"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface truncate">Contrataciones Públicas</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary text-label-sm font-label-sm flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>En vivo / SECOP II</span></div><span class="font-label-sm text-label-sm text-outline truncate">Dashboard General</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded text-on-surface text-label-sm font-label-sm"><span class="text-outline font-label-sm">Vigencia:</span><span class="font-semibold text-primary">2024</span><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div><button aria-label="Notificaciones" class="relative w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- Top Command & Control Ribbon -->
+<section class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary">SECOP II • Datos en Vivo</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-0.5">
+          Dashboard de Contrataciones Públicas
+        </h1>
+</div>
+<button aria-label="Actualizar datos" class="w-9 h-9 flex items-center justify-center rounded-xl bg-surface-container-high text-primary hover:text-on-primary hover:bg-primary transition-all duration-300 active:scale-95 flex-shrink-0" id="refresh-btn" title="Refrescar métricas">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-700" id="refresh-icon">sync</span>
+</button>
+</div>
+<!-- Date selector & refresh status -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-xs">
+<div class="relative flex-1 min-w-[210px]">
+<button class="w-full flex items-center justify-between bg-surface-container-lowest px-space-sm py-1.5 rounded-lg text-on-surface hover:bg-surface-bright transition-colors text-left" id="date-range-toggle">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">01 Ene 2024 - 31 Dic 2024</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-outline px-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Datos actualizados hace 5m</span>
+</div>
+</div>
+</section>
+<!-- Visual Mood Backdrop / Telemetry Hero Strip -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-sm">
+<div class="h-28 w-full bg-cover bg-center" data-alt="High-tech national public procurement telemetry room in Bogota Colombia with dark monitors glowing with data dashboards, mathematical network graphs, deep navy and cyan light reflections, hyper-detailed institutional architecture, cinematographic lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWDtzCUqbaMvXX6jZE98hCpDd_mXvkXi1Vbc-t4Er3nbWmpsugWKNop7KYk6FiN8qNr7ZOZBOxSwKiiAHnPqrVVQwbBXrBEGcN4XP6OImdpja3gW7yV7BLKK4zzQuYC2mB4Xc77bkew_w1nBXbYpBv0d138vDSsHujyqmVY0BqNMLV9wAihcMkaYQsNel_WLw-rsy9J7IRh0b7jJ2GE2EoxZKwdYUuf2HxF3_Uvl0z')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/70 to-transparent p-space-md flex items-end justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-outline">Gasto Consolidado Nacional</p>
+<p class="font-headline-md text-headline-md text-primary font-bold">Vigencia Fiscal Ordinaria</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary text-label-sm font-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>99.8% auditado
+      </span>
+</div>
+</div>
+<!-- KPI Grid: 5 Core Cards -->
+<section class="grid grid-cols-2 gap-space-sm">
+<!-- KPI 1: Total Contratos -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Total Contratos</span>
+<span class="material-symbols-outlined text-primary text-[18px]">description</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface tracking-tight">14,820</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="inline-flex items-center text-label-sm font-label-sm text-secondary bg-secondary-container/20 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +8.4%
+        </span>
+<span class="font-body-sm text-body-sm text-outline">vs año ant.</span>
+</div>
+</div>
+<!-- KPI 2: Monto Total Adjudicado -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Monto Adjudicado</span>
+<span class="material-symbols-outlined text-primary text-[18px]">payments</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">$ 4.28 Billones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">COP</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="inline-flex items-center text-label-sm font-label-sm text-secondary bg-secondary-container/20 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12.1%
+        </span>
+<span class="font-body-sm text-body-sm text-outline">ejecución</span>
+</div>
+</div>
+<!-- KPI 3: Monto Promedio -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Monto Promedio</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">balance</span>
+</div>
+<div class="my-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight">$ 288.7 M</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">COP / adjudicado</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Media ponderada</span>
+</div>
+<!-- KPI 4: En Ejecución -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">En Ejecución</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface tracking-tight">5,310</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary/15 text-secondary text-label-sm font-label-sm self-start">
+<span class="material-symbols-outlined text-[14px]">autorenew</span> Activos
+      </div>
+</div>
+<!-- KPI 5: Finalizados (Full Width Span on Mobile) -->
+<div class="col-span-2 bg-surface-container rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Finalizados y Liquidados</span>
+<span class="font-data-metric text-data-metric text-on-surface leading-tight">8,640</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/20 text-primary text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> 58.3% del Total
+        </span>
+<span class="font-body-sm text-body-sm text-outline mt-1">870 en cierre</span>
+</div>
+</div>
+</section>
+<!-- Interactive Chart 1: Evolución Mensual (Smooth Area Chart) -->
+<section class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">Evolución Mensual Adjudicada</span>
+<span class="font-body-sm text-body-sm text-outline">Curva presupuestal 2024 (COP Billones)</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded text-label-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 2024
+      </div>
+</div>
+<!-- Chart Visualization SVG -->
+<div class="w-full relative pt-2">
+<svg class="w-full h-36 overflow-visible" preserveaspectratio="none" viewbox="0 0 340 140">
+<defs>
+<lineargradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#adc6ff" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#adc6ff" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="lineGradient" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0%" stop-color="#4d8eff"></stop>
+<stop offset="50%" stop-color="#adc6ff"></stop>
+<stop offset="100%" stop-color="#4edea3"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#2d3449" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="340" y1="20" y2="20"></line>
+<line stroke="#2d3449" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="340" y1="60" y2="60"></line>
+<line stroke="#2d3449" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="340" y1="100" y2="100"></line>
+<!-- Shaded Area (Smooth Cubic Bezier with peaks in May and Oct) -->
+<path d="M 0 110 
+                 C 25 105, 45 95, 60 90 
+                 C 85 85, 105 40, 125 32 
+                 C 145 25, 160 85, 185 80 
+                 C 210 75, 235 60, 260 22 
+                 C 285 10, 310 70, 340 65 
+                 L 340 120 L 0 120 Z" fill="url(#areaGradient)">
+</path>
+<!-- Curve Line -->
+<path d="M 0 110 
+                 C 25 105, 45 95, 60 90 
+                 C 85 85, 105 40, 125 32 
+                 C 145 25, 160 85, 185 80 
+                 C 210 75, 235 60, 260 22 
+                 C 285 10, 310 70, 340 65" fill="none" stroke="url(#lineGradient)" stroke-linecap="round" stroke-width="3">
+</path>
+<!-- Peak Point 1: Mayo (x=125, y=32) -->
+<circle class="animate-pulse" cx="125" cy="32" fill="#4d8eff" r="4.5"></circle>
+<circle cx="125" cy="32" fill="#dae2fd" r="2"></circle>
+<text class="font-label-sm" fill="#adc6ff" font-size="9" font-weight="700" text-anchor="middle" x="125" y="20">$512M (May)</text>
+<!-- Peak Point 2: Octubre (x=260, y=22) -->
+<circle class="animate-pulse" cx="260" cy="22" fill="#4edea3" r="4.5"></circle>
+<circle cx="260" cy="22" fill="#dae2fd" r="2"></circle>
+<text class="font-label-sm" fill="#4edea3" font-size="9" font-weight="700" text-anchor="middle" x="260" y="12">$640M (Oct)</text>
+</svg>
+<!-- Month Labels -->
+<div class="flex justify-between items-center text-[10px] text-outline font-label-sm px-1 pt-1">
+<span>Ene</span>
+<span>Mar</span>
+<span class="text-primary font-bold">May</span>
+<span>Jul</span>
+<span>Sep</span>
+<span class="text-secondary font-bold">Oct</span>
+<span>Dic</span>
+</div>
+</div>
+</section>
+<!-- Interactive Chart 2: Procedimiento de Contratación (Styled Custom Bars) -->
+<section class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Tipo de Procedimiento</h2>
+<span class="font-body-sm text-body-sm text-outline">Distribución por volumen y cuantía</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px]">bar_chart</span>
+</div>
+<!-- Modality Items -->
+<div class="flex flex-col gap-space-sm pt-1">
+<!-- Item 1: Licitación Pública (38%) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary"></span>
+<span class="text-on-surface">Licitación Pública</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline font-body-sm">5,631 contratos</span>
+<span class="text-primary font-bold">38%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 38%"></div>
+</div>
+</div>
+<!-- Item 2: Selección Abreviada (27%) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span class="text-on-surface">Selección Abreviada</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline font-body-sm">4,001 contratos</span>
+<span class="text-secondary font-bold">27%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 27%"></div>
+</div>
+</div>
+<!-- Item 3: Contratación Directa (21%) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary"></span>
+<span class="text-on-surface">Contratación Directa</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline font-body-sm">3,112 contratos</span>
+<span class="text-tertiary font-bold">21%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-700" style="width: 21%"></div>
+</div>
+</div>
+<!-- Item 4: Concurso de Méritos (10%) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-tint"></span>
+<span class="text-on-surface">Concurso de Méritos</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline font-body-sm">1,482 contratos</span>
+<span class="text-surface-tint font-bold">10%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full transition-all duration-700" style="width: 10%"></div>
+</div>
+</div>
+<!-- Item 5: Mínima Cuantía (4%) -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-sm bg-outline"></span>
+<span class="text-on-surface">Mínima Cuantía</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-outline font-body-sm">594 contratos</span>
+<span class="text-outline font-bold">4%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full transition-all duration-700" style="width: 4%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Entidades & Proveedores Destacados -->
+<section class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface">Top Actores del Sistema</h3>
+<span class="font-body-sm text-body-sm text-outline">Mayor volumen adjudicado en 2024</span>
+</div>
+<!-- Tab-like Pill Switcher -->
+<div class="flex items-center bg-surface-container-lowest p-0.5 rounded-lg text-label-sm">
+<button class="px-2.5 py-1 rounded-md bg-surface-container-high text-primary font-semibold transition-all" id="tab-entidades">Entidades</button>
+<button class="px-2.5 py-1 rounded-md text-outline hover:text-on-surface transition-all" id="tab-proveedores">Proveedores</button>
+</div>
+</div>
+<!-- Entidades List Content -->
+<div class="flex flex-col gap-space-sm mt-1" id="entidades-panel">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">1. Instituto Nacional de Vías (INVIAS)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold ml-2">$ 894,000 M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 82%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">142 procesos adjudicados • 94.2% transparencia</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">2. Ministerio de Educación Nacional</span>
+<span class="font-label-sm text-label-sm text-primary font-bold ml-2">$ 620,400 M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 65%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">89 procesos adjudicados • Programa PAE</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">3. Alcaldía Mayor de Bogotá - IDU</span>
+<span class="font-label-sm text-label-sm text-primary font-bold ml-2">$ 510,120 M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 53%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">215 procesos adjudicados • Movilidad urbana</span>
+</div>
+</div>
+<!-- Proveedores List Content (hidden by default) -->
+<div class="hidden flex-col gap-space-sm mt-1" id="proveedores-panel">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">1. Consorcio Vial Andino 2024</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2">$ 480,200 M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">NIT: 901.442.110-3 • Obra civil troncal</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">2. Unión Temporal Conectividad Digital</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-2">$ 395,000 M</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 61%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-outline">NIT: 900.892.404-1 • Centros rurales</span>
+</div>
+</div>
+</section>
+<!-- High-Context Action Banner / Shortcut Card -->
+<section class="bg-surface-container-high rounded-xl p-space-md flex flex-col gap-space-sm shadow-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">filter_alt</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Explorador y Auditoría Detallada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Accede al repositorio completo de los 14,820 pliegos con filtros multidimensionales, riesgo de sobrecosto y exportación en formato abierto OCDS.
+        </p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<button class="w-full flex items-center justify-center gap-1.5 bg-surface-container py-2.5 px-3 rounded-lg text-on-surface hover:bg-surface-bright transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span>Filtros Rápidos</span>
+</button>
+<button class="w-full flex items-center justify-center gap-1.5 bg-primary py-2.5 px-3 rounded-lg text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-colors font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>Ver Tabla Completa</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions: Refresh button spin & Tab toggling
+  const refreshBtn = document.getElementById('refresh-btn');
+  const refreshIcon = document.getElementById('refresh-icon');
+
+  if (refreshBtn && refreshIcon) {
+    refreshBtn.addEventListener('click', () => {
+      refreshIcon.classList.add('rotate-180');
+      setTimeout(() => {
+        refreshIcon.classList.remove('rotate-180');
+      }, 700);
+    });
+  }
+
+  const tabEntidades = document.getElementById('tab-entidades');
+  const tabProveedores = document.getElementById('tab-proveedores');
+  const panelEntidades = document.getElementById('entidades-panel');
+  const panelProveedores = document.getElementById('proveedores-panel');
+
+  if (tabEntidades && tabProveedores && panelEntidades && panelProveedores) {
+    tabEntidades.addEventListener('click', () => {
+      tabEntidades.classList.add('bg-surface-container-high', 'text-primary', 'font-semibold');
+      tabEntidades.classList.remove('text-outline');
+      tabProveedores.classList.remove('bg-surface-container-high', 'text-primary', 'font-semibold');
+      tabProveedores.classList.add('text-outline');
+
+      panelEntidades.classList.remove('hidden');
+      panelEntidades.classList.add('flex');
+      panelProveedores.classList.add('hidden');
+      panelProveedores.classList.remove('flex');
+    });
+
+    tabProveedores.addEventListener('click', () => {
+      tabProveedores.classList.add('bg-surface-container-high', 'text-primary', 'font-semibold');
+      tabProveedores.classList.remove('text-outline');
+      tabEntidades.classList.remove('bg-surface-container-high', 'text-primary', 'font-semibold');
+      tabEntidades.classList.add('text-outline');
+
+      panelProveedores.classList.remove('hidden');
+      panelProveedores.classList.add('flex');
+      panelEntidades.classList.add('hidden');
+      panelEntidades.classList.remove('flex');
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-bold"><div class="h-16 px-space-xs flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 px-1 transition-colors text-primary font-bold" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="text-[10px] tracking-tight leading-tight mt-0.5 font-label-sm">General</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="filtros-avanzados" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="text-[10px] tracking-tight leading-tight mt-0.5 font-label-sm">Filtros</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="analitica-&amp;-mapas" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="text-[10px] tracking-tight leading-tight mt-0.5 font-label-sm">Analítica</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="contratos-&amp;-tabla" href="#"><span class="material-symbols-outlined text-[20px]">table_chart</span><span class="text-[10px] tracking-tight leading-tight mt-0.5 font-label-sm">Contratos</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 px-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="reportes-&amp;-exportacion" href="#"><span class="material-symbols-outlined text-[20px]">download</span><span class="text-[10px] tracking-tight leading-tight mt-0.5 font-label-sm">Reportes</span></a></div></nav></body></html>
