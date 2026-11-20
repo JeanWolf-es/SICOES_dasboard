@@ -1,0 +1,92 @@
+{
+  "iniciar_app.py": {
+    "mtime": 1794949865.0419858,
+    "seen": 1795192262.6200726,
+    "ast_hash": "b450a867f6dadee49a839ae2c938f1a9",
+    "semantic_hash": ""
+  },
+  "js/app.js": {
+    "mtime": 1794949375.3047895,
+    "seen": 1795192262.6200726,
+    "ast_hash": "20fe037e6e6ff4f78ec5cb3655570642",
+    "semantic_hash": ""
+  },
+  "js/charts.js": {
+    "mtime": 1794949348.4077072,
+    "seen": 1795192262.6200726,
+    "ast_hash": "8561d88d44a99f0cfa2cee323e819083",
+    "semantic_hash": ""
+  },
+  "js/classifier.js": {
+    "mtime": 1794949296.2782216,
+    "seen": 1795192262.6200726,
+    "ast_hash": "1750daeb34cad2b4a19bbec75f184549",
+    "semantic_hash": ""
+  },
+  "js/csvParser.js": {
+    "mtime": 1794949294.5943215,
+    "seen": 1795192262.6200726,
+    "ast_hash": "6ef176dd160c3eab4b9ae1489e36778b",
+    "semantic_hash": ""
+  },
+  "js/dataService.js": {
+    "mtime": 1794949316.9668257,
+    "seen": 1795192262.6200726,
+    "ast_hash": "3d44945b78f5c4c57b004a0b1bd87bbe",
+    "semantic_hash": ""
+  },
+  "js/mapModule.js": {
+    "mtime": 1794949319.073193,
+    "seen": 1795192262.6200726,
+    "ast_hash": "5fc1f2820a3d762693be868cd47b60ad",
+    "semantic_hash": ""
+  },
+  "js/table.js": {
+    "mtime": 1794949350.0278316,
+    "seen": 1795192262.6200726,
+    "ast_hash": "a2cff3ddbdfc5bb576b2577d495bd678",
+    "semantic_hash": ""
+  },
+  "CLONE.md": {
+    "mtime": 1794952403.5032744,
+    "seen": 1795192262.6200726,
+    "ast_hash": "d342fbb8b02ffad231096910872bd1f9",
+    "semantic_hash": ""
+  },
+  "README.html": {
+    "mtime": 1794949403.1230614,
+    "seen": 1795192262.6200726,
+    "ast_hash": "c7af17e6eef428d611e4dc19d82de80c",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794950793.2992585,
+    "seen": 1795192262.6200726,
+    "ast_hash": "bf1e35466fb0ce8b055670dbdf6e6ada",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1794949273.884595,
+    "seen": 1795192262.6200726,
+    "ast_hash": "4b2d7a522fb2c665233333233c4e5f39",
+    "semantic_hash": ""
+  },
+  "template/DESIGN.md": {
+    "mtime": 1794962678.0,
+    "seen": 1795192262.6200726,
+    "ast_hash": "98cd105b5dd9c871c94a7a21985ffec1",
+    "semantic_hash": ""
+  },
+  "template/code.html": {
+    "mtime": 1794962678.0,
+    "seen": 1795192262.6200726,
+    "ast_hash": "1560f6687782a365c5d61bf06bb660f0",
+    "semantic_hash": ""
+  },
+  "template/screen.png": {
+    "mtime": 1794962678.0,
+    "seen": 1795192262.6200726,
+    "ast_hash": "dc1ec8a2832ad93c7e7539c6fbe2cfa1",
+    "semantic_hash": ""
+  }
+}
